@@ -37,7 +37,7 @@ The programming files contained under this folder were exported from the designs
 
 ## Design Features
 The Libero designs include the following features:
-* A soft RISC-V processor operating at 40 MHz **(The hw_platform.h file in the SoftConsole project will require the SYS_CLK_FREQ parameter to be set to #define SYS_CLK_FREQ 40000000UL)**
+* A soft RISC-V processor operating at 40 MHz **(The fpga_design_config.h file in the SoftConsole project will require the SYS_CLK_FREQ parameter to be set to #define SYS_CLK_FREQ 40000000UL)**
 * A RISC-V debug block allowing on-target debug using SoftConsole
 * An Extended Subsystem with integrated peripherals
 * Target SRAM/TCM memory (32kB)
