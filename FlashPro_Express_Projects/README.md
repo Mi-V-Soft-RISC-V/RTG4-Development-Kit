@@ -1,6 +1,6 @@
 # RTG4 Development Kit FPGA Programming Files
 
-This folder contains FlashPro Express v2023.2 projects for the RTG4 Development Kit Mi-V sample designs.
+This folder contains FlashPro Express v2024.1 projects for the RTG4 Development Kit Mi-V sample designs.
 
 ## Notice
 1) Due to an issue specific to the MIV_RV32 v3.1.100 with the MTVECs address, it is not recommended to use MIV_RV32 v3.1.100 for any FreeRTOS examples. You may use MIV_RV32 v3.0 or the latest MIV_RV32 v3.1.200 with the FreeRTOS examples. 
@@ -37,7 +37,7 @@ The programming files contained under this folder were exported from the designs
 
 ## Design Features
 The Libero designs include the following features:
-* A soft RISC-V processor operating at 40 MHz **(The hw_platform.h file in the SoftConsole project will require the SYS_CLK_FREQ parameter to be set to #define SYS_CLK_FREQ 40000000UL)**
+* A soft RISC-V processor operating at 40 MHz **(The fpga_design_config.h file in the SoftConsole project will require the SYS_CLK_FREQ parameter to be set to #define SYS_CLK_FREQ 40000000UL)**
 * A RISC-V debug block allowing on-target debug using SoftConsole
 * An Extended Subsystem with integrated peripherals
 * Target SRAM/TCM memory (32kB)

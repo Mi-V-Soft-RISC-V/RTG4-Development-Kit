@@ -73,6 +73,13 @@ if {[file exists $projectDir] == 1} then {
 	project_settings -enable_set_mitigation 0
 }
 
+
+# Downgrade memory map generation Design Rule Check (DRC) errors to warnings 
+smartdesign \
+-memory_map_drc_change_error_to_warning 1 \
+-bus_interface_data_width_drc_change_error_to_warning 1 \
+-bus_interface_id_width_drc_change_error_to_warning 1
+
 # Download the required direct cores
 #download_required_direct_cores "$hwPlatform" "$softCpu" "$config"
 

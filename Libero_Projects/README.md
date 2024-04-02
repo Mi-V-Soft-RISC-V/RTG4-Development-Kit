@@ -1,5 +1,5 @@
 # RTG4 Development Kit Mi-V Sample FPGA Designs
-This folder contains Tcl scripts that build Libero SoC v2023.2 design projects for the RTG4 Development Kit. These scripts are executed in Libero SoC to generate the sample designs. All cores boot from memory at 0x8000_0000.
+This folder contains Tcl scripts that build Libero SoC v2024.1 design projects for the RTG4 Development Kit. These scripts are executed in Libero SoC to generate the sample designs. All cores boot from memory at 0x8000_0000.
 
 > This design only supports the production silicon (PS) die
 
@@ -96,7 +96,7 @@ In the examples above the arguments "CFG1" and "CFG1 SYNTHESIZE PS" were entered
 
 ## Design Features
 The Libero designs include the following features:
-* A soft RISC-V processor operating at 40 MHz **(The hw_platform.h file in the SoftConsole project will require the SYS_CLK_FREQ parameter to be set to #define SYS_CLK_FREQ 40000000UL)**
+* A soft RISC-V processor operating at 40 MHz **(The fpga_design_config.h file in the SoftConsole project will require the SYS_CLK_FREQ parameter to be set to #define SYS_CLK_FREQ 40000000UL)**
 * A RISC-V debug block allowing on-target debug using SoftConsole
 * An Extended Subsystem with integrated peripherals
 * Target SRAM/TCM memory (32kB)
