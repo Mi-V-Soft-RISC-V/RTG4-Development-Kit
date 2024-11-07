@@ -32,7 +32,7 @@ create_and_configure_core -core_vlnv {Actel:SystemBuilder:MIV_ESS:2.0.200} -comp
 "CFG_TI_NSC_CUSTOM:0" \
 "CFG_TI_NSC_FRC:false" \
 "DATA_WORD_CNT:8192" \
-"FAMILY_TARGET:26" \
+"FAMILY_TARGET:25" \
 "FIXEDMODE:0" \
 "FIXED_CONFIG_0:true" \
 "FIXED_CONFIG_1:true" \
