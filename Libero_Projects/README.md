@@ -1,5 +1,5 @@
 # RTG4 Development Kit Mi-V Sample FPGA Designs
-This folder contains Tcl scripts that build Libero SoC v2024.1 design projects for the RTG4 Development Kit. These scripts are executed in Libero SoC to generate the sample designs. All cores boot from memory at 0x8000_0000.
+This folder contains Tcl scripts that build Libero SoC v2024.2 design projects for the RTG4 Development Kit. These scripts are executed in Libero SoC to generate the sample designs. All cores boot from memory at 0x8000_0000.
 
 > This design only supports the production silicon (PS) die
 
@@ -10,22 +10,6 @@ This folder contains Tcl scripts that build Libero SoC v2024.1 design projects f
 | CFG1    | This design uses the MIV_RV32 core configured as follows: <ul><li>RISC-V Extensions: IMC</li><li>Multiplier: MACC (Pipelined)</li><li>Interfaces: AHBL Initiator (mirrored), APB3 Initiator</li><li>Internal IRQs: 1</li><li>TCM: disabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: Enabled</li></ul>|
 | CFG2    | This design uses the MIV_RV32 core configured as follows: <ul><li>RISC-V Extensions: IM</li><li>Multiplier: Fabric</li><li>Interfaces: AXI4 Master (mirrored), APB3 Initiator</li><li>Internal IRQs: 1</li><li>TCM: disabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: Enabled* </li></ul>|
 | CFG3    | This design uses the MIV_RV32 core configured as follows: <ul><li>RISC-V Extensions: I</li><li>Multiplier: none</li><li>Interfaces: APB3 Initiator</li><li>Internal IRQs: 1</li><li>TCM: enabled</li><li>System Timer: Internal MTIME enabled, Internal MTIME IRQ enabled</li><li>Debug: Enabled</li></ul>|
-
-
-#### RTG4_Dev_Kit_MIV_RV32IMA_BaseDesign
-
-| Config  | Description |
-| :------:|:------------|
-| CFG1    |This design uses the MIV_RV32IMA_L1_AHB core with an **AHB** interface for memory and peripherals|
-| CFG2    |This design uses the MIV_RV32IMA_L1_AXI core with an **AXI3** interface for memory and peripherals|
-
-
-#### RTG4_Dev_Kit_MIV_RV32IMAF_BaseDesign
-
-| Config  |Description |
-| :------:|:-----------|
-| CFG1    |  This design uses the MIV_RV32IMAF_L1_AHB core with an **AHB** interface for memory and peripherals|
-
 
 ## <a name="quick"></a> Instructions
 
@@ -106,15 +90,3 @@ The peripherals in this design are located at the following addresses.
 | MIV_ESS_APBSLOTE_BASE            | 0x7E00_0000   | 0x7EFF_FFFF    |
 | MIV_ESS_APBSLOTF_BASE            | 0x7F00_0000   | 0x7FFF_FFFF    |
 | SRAM/TCM                         | 0x8000_0000   | 0x8000_7FFF    |
-
-
-#### Legacy core based configurations:
-| Peripheral (Standalone)| Address       |
-| ----------------------:|:-------------:|
-| CoreUARTapb            | 0x7000_1000   |
-| CoreGPIO_IN            | 0x7000_2000   |
-| CoreTimer_0            | 0x7000_3000   |
-| CoreTimer_1            | 0x7000_4000   |
-| CoreGPIO_OUT           | 0x7000_5000   |
-| SRAM                   | 0x8000_0000   |
-
